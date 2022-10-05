@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		E3CE128628EBD11A00AFC608 /* TourMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE128528EBD11A00AFC608 /* TourMapApp.swift */; };
-		E3CE128828EBD11A00AFC608 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE128728EBD11A00AFC608 /* ContentView.swift */; };
-		E3CE128A28EBD11C00AFC608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE128928EBD11C00AFC608 /* Assets.xcassets */; };
 		E3CE128D28EBD11C00AFC608 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE128C28EBD11C00AFC608 /* Preview Assets.xcassets */; };
+		E3CE129428EBD1B400AFC608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE129328EBD1B400AFC608 /* Assets.xcassets */; };
+		E3CE129928EBD2CD00AFC608 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE129828EBD2CD00AFC608 /* Location.swift */; };
+		E3CE129E28EBD4B700AFC608 /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE129D28EBD4B700AFC608 /* LocationsDataService.swift */; };
+		E3CE12A028EBF7C200AFC608 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE129F28EBF7C200AFC608 /* LocationsView.swift */; };
+		E3CE12A228EBF8AD00AFC608 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE12A128EBF8AD00AFC608 /* LocationsViewModel.swift */; };
+		E3CE12A428EC4BC500AFC608 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE12A328EC4BC500AFC608 /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3CE128228EBD11A00AFC608 /* TourMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CE128528EBD11A00AFC608 /* TourMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourMapApp.swift; sourceTree = "<group>"; };
-		E3CE128728EBD11A00AFC608 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E3CE128928EBD11C00AFC608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3CE128C28EBD11C00AFC608 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E3CE129328EBD1B400AFC608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3CE129828EBD2CD00AFC608 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E3CE129D28EBD4B700AFC608 /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
+		E3CE129F28EBF7C200AFC608 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		E3CE12A128EBF8AD00AFC608 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		E3CE12A328EC4BC500AFC608 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				E3CE128528EBD11A00AFC608 /* TourMapApp.swift */,
-				E3CE128728EBD11A00AFC608 /* ContentView.swift */,
-				E3CE128928EBD11C00AFC608 /* Assets.xcassets */,
+				E3CE129628EBD26E00AFC608 /* Views */,
+				E3CE129728EBD27500AFC608 /* ViewModels */,
+				E3CE129528EBD26700AFC608 /* Models */,
+				E3CE129C28EBD48B00AFC608 /* DataServices */,
+				E3CE129328EBD1B400AFC608 /* Assets.xcassets */,
 				E3CE128B28EBD11C00AFC608 /* Preview Content */,
 			);
 			path = TourMap;
@@ -65,6 +76,39 @@
 				E3CE128C28EBD11C00AFC608 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E3CE129528EBD26700AFC608 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE129828EBD2CD00AFC608 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3CE129628EBD26E00AFC608 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE129F28EBF7C200AFC608 /* LocationsView.swift */,
+				E3CE12A328EC4BC500AFC608 /* LocationsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3CE129728EBD27500AFC608 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE12A128EBF8AD00AFC608 /* LocationsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E3CE129C28EBD48B00AFC608 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE129D28EBD4B700AFC608 /* LocationsDataService.swift */,
+			);
+			path = DataServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3CE129428EBD1B400AFC608 /* Assets.xcassets in Resources */,
 				E3CE128D28EBD11C00AFC608 /* Preview Assets.xcassets in Resources */,
-				E3CE128A28EBD11C00AFC608 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3CE128828EBD11A00AFC608 /* ContentView.swift in Sources */,
+				E3CE129E28EBD4B700AFC608 /* LocationsDataService.swift in Sources */,
+				E3CE12A228EBF8AD00AFC608 /* LocationsViewModel.swift in Sources */,
+				E3CE129928EBD2CD00AFC608 /* Location.swift in Sources */,
+				E3CE12A428EC4BC500AFC608 /* LocationsListView.swift in Sources */,
+				E3CE12A028EBF7C200AFC608 /* LocationsView.swift in Sources */,
 				E3CE128628EBD11A00AFC608 /* TourMapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
