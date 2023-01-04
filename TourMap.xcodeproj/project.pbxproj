@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E38A85AD294088E900410486 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A85AC294088E900410486 /* LocationPreviewView.swift */; };
 		E3CE128628EBD11A00AFC608 /* TourMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE128528EBD11A00AFC608 /* TourMapApp.swift */; };
 		E3CE128D28EBD11C00AFC608 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE128C28EBD11C00AFC608 /* Preview Assets.xcassets */; };
 		E3CE129428EBD1B400AFC608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CE129328EBD1B400AFC608 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E38A85AC294088E900410486 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		E3CE128228EBD11A00AFC608 /* TourMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CE128528EBD11A00AFC608 /* TourMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourMapApp.swift; sourceTree = "<group>"; };
 		E3CE128C28EBD11C00AFC608 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				E3CE129F28EBF7C200AFC608 /* LocationsView.swift */,
 				E3CE12A328EC4BC500AFC608 /* LocationsListView.swift */,
+				E38A85AC294088E900410486 /* LocationPreviewView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				E3CE12A228EBF8AD00AFC608 /* LocationsViewModel.swift in Sources */,
 				E3CE129928EBD2CD00AFC608 /* Location.swift in Sources */,
 				E3CE12A428EC4BC500AFC608 /* LocationsListView.swift in Sources */,
+				E38A85AD294088E900410486 /* LocationPreviewView.swift in Sources */,
 				E3CE12A028EBF7C200AFC608 /* LocationsView.swift in Sources */,
 				E3CE128628EBD11A00AFC608 /* TourMapApp.swift in Sources */,
 			);
